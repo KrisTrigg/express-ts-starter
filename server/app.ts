@@ -8,6 +8,10 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api', api.router);
+app.use('/js/vendor/jquery', express.static(path.join(__dirname, '../node_modules/jquery/dist')));
+app.use('/js/vendor/knockout', express.static(path.join(__dirname, '../node_modules/knockout/build/output')));
+app.use('/js/vendor/knockout-amd-helpers', express.static(path.join(__dirname, '../node_modules/knockout-amd-helpers/build')));
+app.use('/js/vendor/bootstrap', express.static(path.join(__dirname, '../node_modules/bootstrap/dist')));
 app.use('/js/vendor', express.static(path.join(__dirname, '../node_modules')));
 app.use(express.static(path.join(__dirname, '../client')));
 
