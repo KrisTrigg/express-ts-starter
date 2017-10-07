@@ -13,5 +13,5 @@ class MainViewModel {
     public name: KnockoutObservable<string> = ko.observable<string>();
 
 }
-
+if(ready){}
 ko.applyBindings(new MainViewModel());

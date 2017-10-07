@@ -289,3 +289,7 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+[data-bind]{
+    display: none;
+}
