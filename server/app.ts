@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 
 //node_modules routing middleware
 //re-routes requests for some files in /js/vendor
-app.use('/js/vendor', modules.router);
+app.use('/scripts/vendor', modules.router);
 
 //REST api routing middleware
 app.use('/api', api.router);

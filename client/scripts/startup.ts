@@ -5,18 +5,18 @@
         shim: {
             "bootstrap": { "deps": ['jquery'] },
             "knockout-amd": { "deps": ["knockout"] },
-            "js/main": { "deps": ["knockout-amd", "bootstrap"] }
+            "scripts/main": { "deps": ["knockout-amd", "bootstrap"] }
         },
         paths: {
-            jquery: 'js/vendor/jquery/jquery.min',
-            knockout: 'js/vendor/knockout/knockout-latest',
-            "knockout-amd": 'js/vendor/knockout/knockout-amd-helpers.min',
-            domready: 'js/vendor/domready/ready.min',
-            bootstrap: 'js/vendor/bootstrap/js/bootstrap.min'
+            jquery: 'scripts/vendor/jquery/jquery.min',
+            knockout: 'scripts/vendor/knockout/knockout-latest',
+            "knockout-amd": 'scripts/vendor/knockout/knockout-amd-helpers.min',
+            domready: 'scripts/vendor/domready/ready.min',
+            bootstrap: 'scripts/vendor/bootstrap/js/bootstrap.min'
         }
     })
 
-    define(['js/main'], (ko) => {
+    define(['scripts/main'], (ko) => {
         console.log('Loaded root deps');
         showElementsWithBindings();
     });

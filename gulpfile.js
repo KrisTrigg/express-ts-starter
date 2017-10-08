@@ -24,7 +24,7 @@ gulp.task("client", function () {
         .pipe(clientProject())
         .js
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest("./client/js"));
+        .pipe(gulp.dest("./client/scripts"));
 });
 
 gulp.task('browse', function () {
